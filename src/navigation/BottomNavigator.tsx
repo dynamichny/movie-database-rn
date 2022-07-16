@@ -3,7 +3,7 @@ import {
   BottomTabNavigationOptions,
   createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs'
-import HomeScreen from '~screens/HomeScreen/HomeScreen'
+import HomeScreen from '../screens/HomeScreen/HomeScreen'
 import { BottomTabsRoutes } from './routes'
 import { BottomTabsParamList } from './navigationTypes'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import _ from 'lodash'
 import Navigation from './navigation'
 import withStatusBar from './components/hocs/withStatusBar'
