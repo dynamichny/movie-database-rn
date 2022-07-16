@@ -11,7 +11,7 @@ module.exports = {
     'react-native/no-inline-styles': 'error',
     'react-native/no-color-literals': 'error',
     'react-native/no-single-element-style-arrays': 'error',
-    'no-console': ['warn', {allow: ['warn', 'error']}],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-shadow': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
@@ -26,4 +26,4 @@ module.exports = {
       },
     },
   ],
-};
+}
