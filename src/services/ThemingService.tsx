@@ -1,11 +1,18 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import { useColorScheme, ColorSchemeName } from 'react-native'
 import { lightColors, darkColors } from '~constants/colors'
+import { ColorSet } from '~constants/types'
 
-export const ThemeContext = createContext({
+type ThemeContextType = {
+  isDark: boolean
+  colors: ColorSet
+  setScheme: (scheme: ColorSchemeName) => void
+}
+
+export const ThemeContext = createContext<ThemeContextType>({
   isDark: false,
   colors: lightColors,
-  setScheme: (scheme: ColorSchemeName) => {},
+  setScheme: () => {},
 })
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
